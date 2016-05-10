@@ -21,11 +21,82 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-markdown><script type="text/template">
+###INTRODUÇÃO A PROGRAMAÇÃO - PYTHON
+> CONCEITOS BÁSICOS
+
+Professor: Felipe Cézar
+
+</script></section>
+
+
+<section data-markdown><script type="text/template">
+##IDLE - Modo Interativo
+![modo_interativo](./assets/images/idle_modo_interativo.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+##IDLE - do Modo Edição
+![modo_edição](./assets/images/idle_modo_editor.png)
+</script></section>
+
+<section data-markdown><script type="text/template">
+## Tipos comuns de dados
+
+| Tipo de dado          | Exemplo                             |
+| :-------------------- | :---------------------------------- |
+| Inteiros              | -2, -1, 0, 1, 2, 10000              |
+| N° de ponto flutuante | -1.25, -1.0, -0.5, 1.0, 5.75        |
+| Strings               | 'a', 'aa', "b", 'Olá!', "11 gatos"  |
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+
+## Operadores Matemáticos
+
+| Operador | Operação        | Exemplo |Resuldado|
+| :-------:| :------:        | :-----: |:-------:|
+| **       | Exponencial     | 2 ** 3  | 8       |
+| %        | Módulo/resto    | 22 % 8  | 6       |
+| //       | Divisão inteira | 22 // 8 | 2       |
+| /        | Divisão         | 22 / 8  | 2.75    |
+| *        | Multiplicação   | 3 * 5   | 15      |
+| -        | Subtração       | 5 - 3   | 2       |
+| +        | Adção           | 2 + 2   | 4       |
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+##Nome de variáveis
+---
+* O nome pode ser constituído somente de uma palavra                   <!-- .element: class="fragment" data-fragment-index="1" -->
+* Somente letras, números e o caracter underscore(_) podem ser usados  <!-- .element: class="fragment" data-fragment-index="2" -->
+* o nome nãopode começar com um número                                 <!-- .element: class="fragment" data-fragment-index="3" -->
+</script></section>
+
+
+
+<section>
+<h2>if</h2>
+<p  >Ler dois valores inteiros e imprimir o maior deles</p>
+
+<pre><code data-trim data-noescape>
+a = int(input("Primeiro valor: "))
+b = int(input("Segundo valor: "))
+if a > b:
+    print("O primeiro número é o maior!")
+if b > a:
+    print("O segundo número é o maior")
+</code></pre>
+</section>
+
+
+
 			</div>
 		</div>
 
