@@ -1,10 +1,16 @@
 <!doctype html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Felipe Cézar - Introdução a Programação - Python Conceitos Básicos</title>
+
+	  <meta name="description" content="Conceitos Básicos da linguagem de programação Python">
+	  <meta name="author" content="Felipe Cézar">
+
+	  <meta name="apple-mobile-web-app-capable" content="yes" />
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
@@ -20,17 +26,39 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+		<style>
+		.reveal h1,
+					 .reveal h2,
+					 .reveal h3,
+					 .reveal h4,
+					 .reveal h5,
+					 .reveal h6 {
+							 text-transform: none;
+					 }
+		 .reveal pre {
+				width: 100%;
+			}
+			.reveal section img {
+					border: none;
+					box-shadow:0 0 0px;
+			}
+			.reveal table em {
+				 color: yellow;
+			 }
+
+		</style>
+
 	</head>
+
 <body>
 <div class="reveal">
 <div class="slides">
 
 <section data-markdown><script type="text/template">
-###INTRODUÇÃO A PROGRAMAÇÃO - PYTHON
-> CONCEITOS BÁSICOS
+###INTRODUÇÃO A PROGRAMAÇÃO
+> PYTHON - CONCEITOS BÁSICOS
 
 Professor: Felipe Cézar
-
 </script></section>
 
 
@@ -40,18 +68,18 @@ Professor: Felipe Cézar
 </script></section>
 
 <section data-markdown><script type="text/template">
-##IDLE - do Modo Edição
+##IDLE - Modo Edição
 ![modo_edição](./assets/images/idle_modo_editor.png)
 </script></section>
 
 <section data-markdown><script type="text/template">
 ## Tipos comuns de dados
 
-| Tipo de dado          | Exemplo                             |
-| :-------------------- | :---------------------------------- |
-| Inteiros              | -2, -1, 0, 1, 2, 10000              |
-| N° de ponto flutuante | -1.25, -1.0, -0.5, 1.0, 5.75        |
-| Strings               | 'a', 'aa', "b", 'Olá!', "11 gatos"  |
+| Tipo de dado    | Exemplo                             |  Python |
+| :-------------- | :---------------------------------: |:------: |
+| Inteiros        | -2, -1, 0, 1, 2, 10000              |int      |
+| Ponto flutuante | -1.25, -1.0, -0.5, 1.0, 5.75        |float    |
+| Strings         | 'a', 'aa', "b", 'Olá!', "11 gatos"  |str      |
 
 </script></section>
 
@@ -74,48 +102,269 @@ Professor: Felipe Cézar
 <section data-markdown><script type="text/template">
 ##Nome de variáveis
 ---
-* O nome pode ser constituído somente de uma palavra                   <!-- .element: class="fragment" data-fragment-index="1" -->
-* Somente letras, números e o caracter underscore(_) podem ser usados  <!-- .element: class="fragment" data-fragment-index="2" -->
-* o nome nãopode começar com um número                                 <!-- .element: class="fragment" data-fragment-index="3" -->
+* O nome pode ser constituído somente de uma palavra.                   <!-- .element: class="fragment" data-fragment-index="1" -->
+* Somente letras, números e o caracter underscore(_) podem ser usados.  <!-- .element: class="fragment" data-fragment-index="2" -->
+* O nome não pode começar com um número.                                 <!-- .element: class="fragment" data-fragment-index="3" -->
 </script></section>
 
-
-
 <section>
-<h2>if</h2>
-<p  >Ler dois valores inteiros e imprimir o maior deles</p>
-
+<h2>Operador de atribuição</h2>
 <pre><code data-trim data-noescape>
-a = int(input("Primeiro valor: "))
-b = int(input("Segundo valor: "))
-if a > b:
-    print("O primeiro número é o maior!")
-if b > a:
-    print("O segundo número é o maior")
+>>> span = 40
+>>> span
+40
+>>> eggs = 2
+>>> span + eggs
+42
+>>> span = span + 2
+>>> span
+42
+>>> span = 'Hello!'
+>> span
+'Hello'
 </code></pre>
 </section>
 
+<section>
+<h2>Comentários</h2>
+<pre><code data-trim data-noescape>
+# Todo texto após o sinal de sustenido(hashtag) não é excutado
+
+"""
+  Este é um exemplo de um comentário de múltiplas
+  linhas em Python. Este tipo de comentário foi testado
+  na versão 2.5 rodando no Windows XP. Note que são
+  três aspas duplas no ínicio e final do comentário
+"""
+</code></pre>
+</section>
+
+<section>
+<h2>Função <em>print()</em></h2>
+<p>A função <em>print()</em> exibe na tela o valor tipo string que está entre parênteses.</p>
+<pre><code data-trim data-noescape>
+print('Olá mundo!')
+nome = 'Felipe'
+print(nome)
+print('Meu nome é ' + nome)
+print('Meu nome é %s'%nome)
+idade = 18
+print('meu nome e %s e minha idade %d.'%(nome,idade))
+</code></pre>
+</section>
+
+<section>
+<h2>Função <em>input()</em></h2>
+<p>A função <em>input()</em> espera o usuário digitar um textos no teclado e pressionar <strong>ENTER</strong>.</p>
+<pre><code data-trim data-noescape>
+nome = input('Digite seu nome: ')
+print(nome)
+</code></pre>
+</section>
+
+<section>
+
+<section>
+<h2>Função <em>str()</em>, <em>int()</em> e <em>float()</em></h2>
+<p>A função <em>str()</em> converte um valor inteiro ou de ponto flutuante em uma string.<p>
+<pre><code data-trim data-noescape>
+>>> a = str(15)
+>>> a
+'15'
+</code></pre>
+</section>
+
+<section>
+<h2>Função <em>str()</em>, <em>int()</em> e <em>float()</em></h2>
+<p>A função <em>int()</em> converte uma string de um número ou um valor em ponto flutuante em um interio.</p>
+<pre><code data-trim data-noescape>
+>>> a = int('15')
+>>> a
+15
+>>> a = int('9.75')
+>>> a
+9
+</code></pre>
+</section>
+
+<section>
+<h2>Função <em>str()</em>, <em>int()</em> e <em>float()</em></h2>
+<p>A função <em>float()</em> converte uma string de um ponto flutuante em um ponto flutuante.</p>
+<pre><code data-trim data-noescape>
+>>> a = float('9.75')
+>>> a
+9.75
+>>> b = float(5)
+>>> b
+5.0
+</code></pre>
+</section>
+
+</section>
+
+<section data-markdown><script type="text/template">
+<h2> Operadores de comparação</h2>
+
+| Operador | Significado      |
+| :------: | :--------------  |
+| ==       | Igual a          |
+| !=       | Diferente de     |
+| <        | Menor que        |
+| >        | Maior que        |
+| <=       | Menor ou igual a |
+| >=       | Maior ou igual a |
+
+</script></section>
+<section>
+
+<section data-markdown><script type="text/template">
+<h2> Operadores de Booleanos</h2>
+> Tabela verdade <em>and</em>.
+
+| Expressão                     | Resultado  |
+| :---------------------------  | :--------: |
+| Verdade <em>and</em> Verdade  | Verdade    |
+| Verdade <em>and</em> Falso    | Falso      |
+| Falso &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>and</em> Verdade    | Falso      |
+| Falso &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>and</em> Falso     | Falso      |
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+<h2> Operadores de Booleanos</h2>
+> Tabela verdade <em>or</em>
+
+| Expressão                     | Resultado  |
+| :---------------------------  | :--------: |
+| Verdade <em>or</em> Verdade   | Verdade    |
+| Verdade <em>or</em> Falso     | Verdade    |
+| Falso &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>or</em> Verdade     | Verdade    |
+| Falso &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>or</em> Falso      | Falso      |
+
+</script></section>
+
+<section data-markdown><script type="text/template">
+<h2> Operadores de Booleanos</h2>
+> Tabela verdade <em>not</em>
+
+| Expressão            | Resultado  |
+| :------------------- | :--------: |
+| <em>not</em> Verdade | Falso      |
+| <em>not</em> Falso   | Verdade    |
 
 
-			</div>
-		</div>
+</script></section>
+</section>
+
+<section>
+
+<section>
+<h2>Instrução de controle de fluxo <em>if</em></h2>
+<p>O bloco da instrução <em>if</em> será execultado somente quando a condição da instrução for <strong>Verdadeira</strong>.</p>
+<pre><code data-trim data-noescape>
+if <em>CONDIÇÃO</em> :
+	<em>BLOCO DE INSTRUÇÕES</em>
+</code></pre>
+</section>
+
+<section>
+<p> Faça um programa que verifique se um carro é novo ou velho. Seo carro tiver pelo menos três anos é novo.</p>
+</section>
+
+<section>
+
+<pre><code data-trim data-noescape>
+idade = int(input("Digite a idade de seua carro: "))
+if idade <= 3:
+    print("Seu carro é novo")
+if idade > 3:
+    print("Seu carro é velho")
+</code></pre>
+
+</section>
+</section>
+
+<section>
+
+<section>
+<h2>Instrução de controle de fluxo <em>else</em></h2>
+<p>O bloco da instrução <em>else</em> será execultado somente quando a condição da instrução <em>if</em> for <strong>Falsa</strong>.</p>
+<pre><code data-trim data-noescape>
+if <em>CONDIÇÃO</em> :
+	<em>BLOCO DE INSTRUÇÕES</em>
+else:
+	<em>BLOCO DE INSTRUÇÕES</em>
+</code></pre>
+</section>
+
+<section>
+<p> Faça o mesmo programa que verifica se um carro é novo, utilizando agora a instrução <em>else</em>.</p>
+</section>
+
+<section>
+
+<pre><code data-trim data-noescape>
+idade = int(input("Digite a idade de seua carro: "))
+if idade <= 3:
+    print("Seu carro é novo")
+else:
+    print("Seu carro é velho")
+</code></pre>
+
+</section>
+</section>
+
+<section>
+<h2>Instrução de controle de fluxo <em>elif</em></h2>
+<p>O bloco da instrução <em>elif</em> será execultado somente quando todas as condições anteriores forem <strong>Falsas</strong>.</p>
+<pre><code data-trim data-noescape>
+if <em>CONDIÇÃO</em> :
+	<em>BLOCO DE INSTRUÇÕES</em>
+elif <em>CONDIÇÃO</em>:
+	<em>BLOCO DE INSTRUÇÕES</em>
+elif <em>CONDIÇÃO</em>:
+	<em>BLOCO DE INSTRUÇÕES</em>
+</code></pre>
+</section>
+
+</section>
+
+
+<section>
+		<h2>Obrigado!</h2>
+		<p>Prof. Felipe Cézar</p>
+		<p><a href="http://twitter.com/felipecezar">@felipecezar</a></p>
+
+</section>
+
+</div>
+</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
 		<script>
-			// More info https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				history: true,
+       // Full list of configuration options available at:
+       // https://github.com/hakimel/reveal.js#configuration
 
-				// More info https://github.com/hakimel/reveal.js#dependencies
-				dependencies: [
-					{ src: 'plugin/markdown/marked.js' },
-					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
-			});
-		</script>
+       Reveal.initialize({
+           controls: true,
+           progress: true,
+           history: true,
+           center: true,
+           transition: 'slide', // none/fade/slide/convex/concave/zoom
+           // Optional reveal.js plugins
+           dependencies: [
+               { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+               { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+               { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+               { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+               { src: 'plugin/zoom-js/zoom.js', async: true },
+               { src: 'plugin/notes/notes.js', async: true }
+           ]
+       });
+			 Reveal.configure({ slideNumber: 'c/t' });
+
+   </script>
 	</body>
 </html>
