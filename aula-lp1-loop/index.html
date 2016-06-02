@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Felipe Cézar - Linguagem de Programação I - Python Instruções de lopp</title>
+
+	  <meta name="description" content="Instruções de loop da linguagem de programação Python">
+	  <meta name="author" content="Felipe Cézar">
+
+	  <meta name="apple-mobile-web-app-capable" content="yes" />
+	  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+		.reveal h1,
+					 .reveal h2,
+					 .reveal h3,
+					 .reveal h4,
+					 .reveal h5,
+					 .reveal h6 {
+							 text-transform: none;
+					 }
+		 .reveal pre {
+				width: 100%;
+			}
+			.reveal section img {
+					border: none;
+					box-shadow:0 0 0px;
+			}
+			.reveal table em {
+				 color: yellow;
+			 }
+
+		</style>
+
+	</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<section data-markdown><script type="text/template">
+###LINGUAGEM DE PROGRAMAÇÃO I
+> PYTHON - INSTRUÇÕES DE LOOP
+
+Professor: Felipe Cézar
+</script></section>
+
+<section>
+<h2>Instrução de lopp <em>while</em></h2>
+<p>O código do bloco de intruções <em>while</em> é execultado quando a condição da instrução for <em>Verdadeira</em>.</p>
+<pre><code data-trim data-noescape>
+while CONDIÇÃO :
+	BLOCO DE INTRUÇÕES
+</code></pre>
+</section>
+
+<section>
+<h2>Instrução <em>break</em></h2>
+<p>Quando uma instrução <em>break</em> é alcançada, a execução do programa sairá imediatamente do loop <em>while</em>.</p>
+<pre><code data-trim data-noescape>
+while True:
+	nome = input('Digite seu nome: ')
+	if nome == 'seu nome':
+		break
+print('Obrigado!')
+</code></pre>
+</section>
+
+<section>
+<h2>Instrução <em>continue</em></h2>
+<p>Quando uma instrução <em>continue</em> é alcançada, a execução do programa retornará imediatamente ao inicio do loop e a condição será avaliada novamente.</p>
+<pre><code data-trim data-noescape>
+while True:
+	nome = input('Digite seu nome: ')
+	if nome != 'felipe':
+		continue
+	senha = input('Olá, Felipe. Qual sua senha:')
+	if senha == '123':
+		break
+print('Acesso autorizado!!')
+</code></pre>
+</section>
+
+
+<section>
+<h2>Lopp <em>for</em> e função <em>range</em></h2>
+<p>Na primeira vez que o loop <em>for</em> é execultado, a variável i é definida como 0. Depois de finalizar uma interação passando por todo o codigo do bloco, a execução retorna ao início do loop e a instrução for incrementará <em>i</em> em 1. A variável <em>i</em> assumirá os valores até o intreiro passado pela função <em>range()</em>.</p>
+<pre><code data-trim data-noescape>
+print('Meu nome é ')
+for i in range(5):
+	print('Felipe %d vez(es).' %i)
+</code></pre>
+</section>
+
+<section>
+<h2>Argumentos da função <em>range</em></h2>
+<p>Definindo o início e o fim</p>
+<pre><code data-trim data-noescape>
+for i in range(12,16):
+	print(i)
+</code></pre>
+<p>Definindo o incremento</p>
+<pre><code data-trim data-noescape>
+for i in range(0,10,2):
+	print(i)
+</code></pre>
+<p>Outras possibilidades</p>
+<pre><code data-trim data-noescape>
+for i in range(5,-1,-1):
+	print(i)
+</code></pre>
+
+
+</section>
+
+<section>
+		<h2>Obrigado!</h2>
+		<p>Prof. Felipe Cézar</p>
+		<p><a href="http://twitter.com/felipecezar">@felipecezar</a></p>
+
+</section>
+
+</div>
+</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+       // Full list of configuration options available at:
+       // https://github.com/hakimel/reveal.js#configuration
+
+       Reveal.initialize({
+           controls: true,
+           progress: true,
+           history: true,
+           center: true,
+           transition: 'slide', // none/fade/slide/convex/concave/zoom
+           // Optional reveal.js plugins
+           dependencies: [
+               { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+               { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+               { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+               { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+               { src: 'plugin/zoom-js/zoom.js', async: true },
+               { src: 'plugin/notes/notes.js', async: true }
+           ]
+       });
+			 Reveal.configure({ slideNumber: 'c/t' });
+
+   </script>
+	</body>
+</html>
