@@ -1,0 +1,176 @@
+/**
+ * @file
+ * Presentation-specific styles.
+ */
+.reveal .slides section.title {
+  padding: 0;
+}
+.reveal .slides section.title .content {
+  grid-template-columns: auto;
+  grid-template-areas: "title" "description";
+}
+.slides .title .presentation-url {
+  grid-area: header;
+  text-align: right;
+  font-size: 0.8em;
+  align-self: center;
+  opacity: 0.5;
+}
+
+img {
+  display: block;
+}
+
+.reveal ul {
+  font-size: 1.5em;
+  align-self: center;
+  justify-self: center;
+}
+@media (min-width: 1280px) {
+  .reveal ul {
+    width: calc(80% - 1em);
+  }
+}
+
+.reference a{
+  font-size: 0.8em;
+  opacity: 0.5;
+}
+/**
+* IMAGENS DE FUNDO PARA OS SLIDES
+**/
+
+#profissoes-ameacadas{
+  background-image: url('../images/profissoes.jpeg');  
+}
+
+#ds-exponenciais{
+  background-image: url('../images/inovacao.jpg');  
+}
+
+#biotecnologia{
+  background-image: url('../images/biotecnologia.jpg');  
+}
+
+#energia-solar{
+  background-image: url('../images/energia-solar.jpeg');  
+}
+
+#impressao3d {
+    background-image: url('../images/impressora3d.jpg');  
+}
+
+#robotica-industrial{
+  background-image: url('../images/robotica-industrial.jpg');  
+}
+
+#drone{
+  background-image: url('../images/drone.jpeg');  
+}
+
+#hipotese-educacao{
+  background-image: url('../images/educacao.jpeg');
+}
+
+#aprender-programar{
+  background-image: url('../images/programacao.jpeg');
+}
+
+#novas-geracoes{
+  background-image: url('../images/novas-geracoes.jpeg');
+}
+
+#bigdata{
+  background-image: url('../images/bigdata.jpeg');
+}
+
+#iot {
+  background-image: url('../images/iot.jpeg');
+}
+
+#revolucao-industrial {
+  background-image: url('../images/revolucao-industrial.jpg');
+}
+
+
+#industria4 {
+  background-image: url('../images/industria4.jpg');
+}
+
+#problemas{
+  background-image: url('../images/problemas.jpg');
+}
+
+#educacao-contexto{
+  background-image: url('../images/sala-aula.jpg');
+}
+
+#profissoes-extintas {
+  background-image: url('../images/profissoes-extintas.png');
+}
+
+#futuro-emprego {
+  background-image: url('../images/futuro-emprego.jpeg');
+}
+
+#disruptiva {
+  background-image: url('../images/disruptiva.png');
+}
+
+#exponencial {
+  background-image: url('../images/dobrar-papel.jpg');
+}
+
+#lei-moore {
+  background-image: url('../images/moore.jpg');
+}
+#maker {
+  background-image: url('../images/maker.jpg');
+}
+#aceleracao-tecnologias {
+  background-image: url('../images/aceleracao-tecnologias.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+#about {
+  background-image: url('../images/sobre-mim.jpg');
+}
+
+.bg-img {
+  background-size: cover;
+  background-position: center center;
+}
+
+.bg-img .content {
+  text-align: center;
+}
+
+.bg-img aside {
+  background-color: rgba(255, 255, 255, .7);
+  color: #000;
+  float: right;
+  font-size: 1.5em;
+  padding: 5vmin;
+}
+
+.left aside{
+  float: left;
+}
+
+.bg-img a {
+  color: rgb(51, 51, 51);
+}
+
+.bg-img aside hr {
+  color: rgba(0,0,0, 0.075);
+  margin: 2.5vmin 0;
+}
+
+.bg-img aside ul {
+  display: block;
+  font-size: inherit;
+  list-style: none;
+  margin: 2.5vmin 0 0;
+  width: auto;
+}
+
