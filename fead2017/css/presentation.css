@@ -40,6 +40,11 @@ img {
 * IMAGENS DE FUNDO PARA OS SLIDES
 **/
 
+#educacao-futuro{
+  background-image: url('../images/sobre-mim.jpg');  
+}
+
+
 #profissoes-ameacadas{
   background-image: url('../images/profissoes.jpeg');  
 }
