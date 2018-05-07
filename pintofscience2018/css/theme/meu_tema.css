@@ -1,0 +1,62 @@
+.reveal {
+    font-family: Helvetica, sans-serif;
+    font-size: inherit;
+    font-weight: normal;
+    color: #fff; 
+}
+
+/*********************************************
+ * CABEÇALHOS
+ *********************************************/
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-family: Helvetica, sans-serif;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-transform: none;
+    text-shadow: none;
+    word-wrap: break-word; 
+}
+
+.reveal h1 {
+    font-size: 2.5em; 
+}
+
+.reveal h2 {
+    font-size: 1.6em;
+}
+
+.reveal h3 {
+    font-size: 1.3em;
+}
+
+.reveal h4 {
+    font-size: 1em;
+}
+
+/*********************************************
+ * OUTROS TEXTOS
+ *********************************************/
+.reveal p {
+    margin: 20px 0;
+    line-height: 1.3;
+}
+
+
+html {
+    font-size: 2.25vmin;
+}
+
+
+.reveal li {
+    list-style: none;
+    text-align: left;
+    margin-left: 10vmin;
+}

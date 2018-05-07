@@ -1,45 +1,69 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
     <title>Slides</title>
-    <meta charset="utf-8"/>
-    <style>
-        body {
-            background: #add9e4;
-            background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
-            background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-            background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-            background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-            background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
-            background-color: #f7fbfc;
-            font-family: "Open Sans", sans-serif;
-            font-size: 1em;
-            font-weight: 200;
-            letter-spacing: -0.02em;
-            color: #333333;
-            margin-top: 30px;
-            margin-left: 30px;
-        }
-    </style>
 </head>
-
 <body>
-    <p>
-        <a href="aula-python-2016-p1">Aula - LP1 - Instrucoes condicionais</a>
-    </p>
-    <p>
-        <a href="aula-lp1-loop">Aula - LP1 - Instuções de lopp</a>
-    </p>
-    <p>
-        <a href="physical-web">Palestra FISL17</a>
-    </p>
-    <p>
-        <a href="fead2017">Palestra FEAD 2017</a>
-    </p>
+    <!-- Cabecalho Vitrine -->
+    <header id="vitrine" class="grid">
+        <div class="bg-image"></div>
+        <div class="conteudo-bloco">
+            <h1>Professor <span>Felipe Cézar</span></h1>
+            
+        </div>
+    </header>
 
+    <!-- Area Principal -->
+    <main id="principal">
 
+        <!-- Seção B -->
+        <section id="secao-b" class="grid">
+            <ul>
+                <li>
+                    <div class="cartao">
+                        <img src="./img/imagem-1.jpeg" alt="">
+                        <div class="cartao-conteudo">
+                            <h3 class="cartao-titulo">Linguagem de Programação - Parte I</h3>
+                            <p>Python: Tipos de dados; entrada e saída; instruções de controle.</p>
+                            <a href="lp1" class="botao">Ver apresentação</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cartao">
+                        <img src="./img/imagem-2.jpg" alt="">
+                        <div class="cartao-conteudo">
+                            <h3 class="cartao-titulo">Linguagem de Programação - Parte II</h3>
+                            <p>Python: Loops; orientação a objetos.</p>
+                            <a href="lp2" class="botao">Ver apresentação</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="cartao">
+                        <img src="./img/imagem-3.jpeg" alt="">
+                        <div class="cartao-conteudo">
+                            <h3 class="cartao-titulo">Banco de Dados</h3>
+                            <p>MySQL: Criação do danco de dados; criação de tabelas; inserção de dados; consultas.</p>
+                            <a href="bd1" class="botao">Ver apresentação</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+
+    <footer id="rodape-principal" class="grid">
+        <div>Professor <a href="http://felipecezar.com.br" target="_blank">Felipe Antunes</a></div>
+    </footer>
+    
 </body>
-
 </html>
