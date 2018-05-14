@@ -226,53 +226,6 @@ body {
 }
 
 /*********************************************
- * CAPA SLIDE
- *********************************************/
-
-.grid {
-  display: grid;
-}
-
-.reveal .slides section.capa {
-  margin: 4vw;
-  width: calc(100vw - 2*4vw); 
-}
-
-.reveal .slides section.capa .grid {
-  grid-template-areas: "cabecalho cabecalho" "conteudo conteudo" ". credito";
-  grid-template-columns: auto 40%;
-  grid-template-rows: 1fr 6fr 1fr;
-  grid-column-gap: 10vmin; 
-}
-
-.reveal .slides section.capa .conteudo {
-  align-self: center;
-  grid-area: conteudo; 
-}
-
-.reveal .slides section.capa .conteudo h1 {
-  text-transform: uppercase;
-}
-
-.reveal .slides section.capa .credito {
-  grid-area: credito;
-  line-height: 1.8em;
-  text-align: left;
-}
-
-.reveal .slides section.capa .credito hr {
-  border: solid  lightslategray;
-  border-width: 1px 0 0 0;
-  margin: 0 0 .8em 0;
-  width: 20%; 
-}
-
-.reveal .slides section.capa .credito .nome {
-   font-weight: bold; 
-  }
-
-
-/*********************************************
  * LISTAS
  *********************************************/  
 
@@ -337,3 +290,58 @@ body {
 .reveal table tbody tr:last-child th,
 .reveal table tbody tr:last-child td {
   border-bottom: none; }
+
+/*********************************************
+ * CAPA SLIDE
+ *********************************************/
+
+
+/*
+ .grid {
+  display: grid;
+}
+
+.reveal .slides section.capa {
+  margin: 4vw;
+  width: calc(100vw - 2*4vw); 
+}
+
+.reveal .slides section.capa .grid {
+  grid-template-areas: "cabecalho cabecalho" "conteudo conteudo" ". credito";
+  grid-template-columns: auto 40%;
+  grid-template-rows: 1fr 6fr 1fr;
+  grid-column-gap: 10vmin; 
+}
+
+
+.reveal .slides section.capa .conteudo {
+  align-self: center;
+  grid-area: conteudo; 
+}
+
+.reveal .slides section.capa .conteudo h1 {
+  text-transform: uppercase;
+}
+
+.reveal .slides section.capa .credito {
+  grid-area: credito;
+  line-height: 1.8em;
+  text-align: left;
+}
+
+.reveal .slides section.capa .credito hr {
+  border: solid  lightslategray;
+  border-width: 1px 0 0 0;
+  margin: 0 0 .8em 0;
+  width: 20%; 
+}
+
+.reveal .slides section.capa .credito .nome {
+   font-weight: bold; 
+  } */
+
+  .reveal h1:first-child::before{
+    content: "[Logo]";
+    color: red;
+  }
+  
